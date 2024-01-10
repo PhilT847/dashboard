@@ -11,10 +11,10 @@ ul {
     list-style: none;
 }
 
-.main-content, .header, .sidebar, .content, .dash-logo,
-.dash-top, .dash-bottom, .projects, 
-.announcements, .trending, .header-buttons, 
-.project-cards {
+.main-content, .header, .header-top, .header-bottom,
+.sidebar, .search, .content, .dash-logo, .dash-top, 
+.dash-bottom, .projects, .announcements, .trending, 
+.header-buttons, .project-cards {
     display: grid;
 }
 
@@ -37,7 +37,27 @@ ul {
     grid-template-rows: 1fr 1.25fr;
 }
 
+.header-top {
+
+}
+
 .search {
+    grid-column: 1/2;
+    grid-template-columns: min(1fr, 100px) 8fr;
+}
+
+.search-icon {
+    grid-column: 1/2;
+    height: 100px;
+}
+
+.search-bar {
+    grid-column: 2/3;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.header-bottom {
 
 }
 
@@ -131,7 +151,7 @@ img.logo-image {
 
 .card {
     background-color: white;
-    border-radius: 20%;
+    border-radius: 10px;
 }
 
 .announcements {
