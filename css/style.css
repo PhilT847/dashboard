@@ -22,7 +22,11 @@ ul {
     display: grid;
     gap: 1em;
     list-style: none;
-    padding: 0px;
+    padding-left: 0.5em;
+}
+
+h1 {
+    font-size: 1.3em;
 }
 
 .main-content, .header, .header-top, .header-bottom,
@@ -141,12 +145,15 @@ ul {
     grid-row: 1/3;
     grid-column: 1/2;
     padding: 1em;
-    grid-template-rows: 4em 18em 10em;
+    gap: 2em;
+    grid-template-rows: 5em 18em 10em;
 }
 
 .sidebar-logo {
     grid-template-columns: 1fr 4fr;
     display: grid;
+    align-items: center;
+    gap: 0.5em;
 }
 
 .sidebar-top {
@@ -169,7 +176,7 @@ img.option-image {
 }
 
 img.logo-image {
-    height: 2em;
+    height: 3em;
 }
 
 .content {
@@ -231,6 +238,10 @@ img.logo-image {
 
 /* smaller screens */
 @media only screen and (max-width: 600px) {
+
+    ul {
+        padding: 0px;
+    }
 
     .main-content {
         width: 100vw;
