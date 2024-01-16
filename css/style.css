@@ -13,6 +13,11 @@ body {
     padding: 0;
 }
 
+button {
+    border: none;
+    outline: inherit;
+}
+
 ul {
     display: grid;
     gap: 1em;
@@ -246,8 +251,20 @@ img.logo-image {
         display: none;
     }
 
+    .sidebar {
+        grid-template-rows: 1fr 1fr;
+    }
+
     .sidebar-logo {
         display: none;
+    }
+
+    .sidebar-top {
+        grid-row: 1/2;
+    }
+
+    .sidebar-bottom {
+        grid-row: 2/3;
     }
 
     .header-bottom {
