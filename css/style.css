@@ -157,7 +157,9 @@ ul {
 
 ul li.option {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1.5em 1fr;
+    gap: 0.5em;
+    align-items: center;
 }
 
 img.option-image {
