@@ -236,8 +236,10 @@ img.logo-image {
     grid-column: 1/2;
 }
 
-.announcements, .trending, .card {
+.announcements-box, .trending-box, .card {
+    background-color: white;
     box-shadow: 4px 4px 8px 2px var(--page-shadow);
+    border-radius: 10px;
 }
 
 .announcements {
@@ -245,9 +247,17 @@ img.logo-image {
     grid-column: 2/3;
 }
 
+.announcements-box {
+    grid-row: 2/3;
+}
+
 .trending {
     grid-row: 2/3;
     grid-column: 2/3;
+}
+
+.trending-box {
+    grid-row: 2/3;
 }
 
 .project-cards {
@@ -261,8 +271,6 @@ img.logo-image {
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 2em 1fr 2em;
     border-left: 12px solid var(--page-navy);
-    background-color: white;
-    border-radius: 10px;
     padding: 2.5em 2em 2.5em 2em;
 }
 
