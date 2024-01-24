@@ -33,8 +33,9 @@ h1 {
 .main-content, .header, .header-top, .header-bottom,
 .hello, .header-buttons, .sidebar, .search, .info, 
 .content, .dash-logo, .dash-top, .dash-bottom, .projects, 
-.announcements, .trending, .header-buttons, 
-.project-cards, .card, .card-buttons {
+.announcements, .announcements-box, .announcement, .trending, 
+.trending-box, .trending-user, .header-buttons, .project-cards, 
+.card, .card-buttons {
     display: grid;
 }
 
@@ -216,7 +217,7 @@ img.logo-image {
     grid-row: 2/3;
     grid-column: 2/3;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 3fr 2fr;
+    grid-template-rows: 1.2fr 1fr;
 }
 
 .content-name {
@@ -247,8 +248,22 @@ img.logo-image {
     grid-column: 2/3;
 }
 
-.announcements-box {
+.announcement {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.announcements-box, .trending-box  {
     grid-row: 2/3;
+    padding: 24px;
+}
+
+.announcement-title, .trending-username {
+    font-weight: 700;
+}
+
+.gray {
+    color: var(--page-gray);
 }
 
 .trending {
@@ -256,8 +271,9 @@ img.logo-image {
     grid-column: 2/3;
 }
 
-.trending-box {
-    grid-row: 2/3;
+.trending-user {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .project-cards {
@@ -300,14 +316,6 @@ img.logo-image {
 .card-button {
     width: 1.5em;
     margin: 0 auto;
-}
-
-.announcements {
-
-}
-
-.trending {
-
 }
 
 /* smaller screens */
@@ -414,7 +422,7 @@ img.logo-image {
         grid-column: 1/2;
         padding: 2em;
         grid-template-columns: 1fr;
-        grid-template-rows: 36fr 1fr 1fr;
+        grid-template-rows: 110em 1fr 1fr;
     }
 
     .projects {
