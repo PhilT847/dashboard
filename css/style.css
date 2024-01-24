@@ -10,6 +10,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--page-l-gray);
     margin: 0px;
     padding: 0;
 }
@@ -66,7 +67,7 @@ h1 {
 .header-top {
     grid-column: 1/2;
     grid-row: 1/2;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     gap: 64px;
 }
 
@@ -81,6 +82,10 @@ h1 {
     width: 3em;
     border-radius: 1.5em;
     margin: 0 auto;
+}
+
+.header-username {
+    font-size: 1.25em;
 }
 
 .user-icon-large {
@@ -163,7 +168,7 @@ h1 {
     color: white;
     font-size: 1.2em;
     background-color: var(--page-yellow);
-    height: 2em;
+    height: 2.5em;
     width: 6em;
     border-radius: 1.5em;
 }
@@ -314,7 +319,7 @@ img.logo-image {
 .project-cards {
     grid-row: 2/3;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 2%;
 }
 
