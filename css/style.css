@@ -218,7 +218,7 @@ img.logo-image {
     background-color: var(--page-l-gray);
     box-shadow: inset 2px 2px 8px 2px var(--page-shadow);
     gap: 2em;
-    padding: 2vw 2vh;
+    padding: 48px;
     grid-row: 2/3;
     grid-column: 2/3;
     grid-template-columns: 3fr 1fr;
@@ -246,6 +246,48 @@ img.logo-image {
     background-color: white;
     box-shadow: 4px 4px 8px 2px var(--page-shadow);
     border-radius: 10px;
+}
+
+.project-cards {
+    grid-row: 2/3;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+}
+
+.card {
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2em 1fr 2em;
+    border-left: 12px solid var(--page-navy);
+    padding: 2.5em 2em 2.5em 2em;
+}
+
+.card-header {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding-right: 25%;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.card-info {
+    color: var(--page-gray);
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding-right: 25%;
+    font-size: 1em;
+}
+
+.card-buttons {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.card-button {
+    width: 1.5em;
+    margin: 0 auto;
 }
 
 .announcements {
@@ -314,48 +356,6 @@ img.logo-image {
 .trending-project {
     grid-row: 2/3;
     grid-column: 2/3;
-}
-
-.project-cards {
-    grid-row: 2/3;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr 1fr;
-    gap: 2%;
-}
-
-.card {
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: 2em 1fr 2em;
-    border-left: 12px solid var(--page-navy);
-    padding: 2.5em 2em 2.5em 2em;
-}
-
-.card-header {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    padding-right: 25%;
-    font-weight: 700;
-    font-size: 1.25em;
-}
-
-.card-info {
-    color: var(--page-gray);
-    grid-column: 1/3;
-    grid-row: 2/3;
-    padding-right: 25%;
-    font-size: 1em;
-}
-
-.card-buttons {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-}
-
-.card-button {
-    width: 1.5em;
-    margin: 0 auto;
 }
 
 /* smaller screens */

@@ -1,2 +1,2 @@
 # dashboard
-A dashboard. Created to practice CSS Grid.
+An administrative dashboard. Created to practice CSS Grid.
